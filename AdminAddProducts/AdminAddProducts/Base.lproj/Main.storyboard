@@ -60,17 +60,27 @@
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="93.75"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Dashboard-->
         <scene sceneID="GhK-Pp-5qw">
             <objects>
                 <viewController id="EgM-zi-rLI" customClass="DashboardViewController" customModule="AdminAddProducts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Hv8-jB-qnD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPE-Ob-qyq">
+                                <rect key="frame" x="109" y="198" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Product Category"/>
+                                <connections>
+                                    <segue destination="Drj-WW-Dey" kind="show" id="c2p-Yv-RCy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UNu-7J-3wm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vb9-9z-hXQ">
+                    <navigationItem key="navigationItem" title="Dashboard" id="vb9-9z-hXQ">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="kab-ej-nS8">
                             <connections>
                                 <action selector="logoutAction:" destination="EgM-zi-rLI" id="bRg-OU-HQN"/>
@@ -81,6 +91,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evn-GO-rFd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1920" y="101"/>
+        </scene>
+        <!--Add Product Catgory-->
+        <scene sceneID="7Vf-si-hvn">
+            <objects>
+                <viewController id="Drj-WW-Dey" customClass="AddProductCategoryViewController" customModule="AdminAddProducts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kBB-Ww-05q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XD6-Af-o4z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Product Catgory" id="g6O-2Q-8a3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u6A-No-SuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="110"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="haX-oN-zcZ">
