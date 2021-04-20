@@ -19,6 +19,8 @@
 		751FF4DB26268E1E007CB2A8 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FF4DA26268E1E007CB2A8 /* KeychainService.swift */; };
 		751FF4DE2626912B007CB2A8 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FF4DD2626912B007CB2A8 /* DashboardViewController.swift */; };
 		751FF4E126269247007CB2A8 /* AddProductCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751FF4E026269247007CB2A8 /* AddProductCategoryViewController.swift */; };
+		75F194C4262F86DC00698D7D /* ProductCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F194C3262F86DC00698D7D /* ProductCategoriesModel.swift */; };
+		75F194C7262F8E7000698D7D /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F194C6262F8E7000698D7D /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		751FF4DA26268E1E007CB2A8 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		751FF4DD2626912B007CB2A8 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		751FF4E026269247007CB2A8 /* AddProductCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductCategoryViewController.swift; sourceTree = "<group>"; };
+		75F194C3262F86DC00698D7D /* ProductCategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesModel.swift; sourceTree = "<group>"; };
+		75F194C6262F8E7000698D7D /* AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 		FD650CFC5D4CE8166B885EBB /* Pods-AdminAddProducts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdminAddProducts.release.xcconfig"; path = "Target Support Files/Pods-AdminAddProducts/Pods-AdminAddProducts.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 		751FF49E26268CB8007CB2A8 /* AdminAddProducts */ = {
 			isa = PBXGroup;
 			children = (
+				75F194C2262F86CC00698D7D /* Model */,
 				751FF4D426268DE6007CB2A8 /* Utilities */,
 				751FF49F26268CB8007CB2A8 /* AppDelegate.swift */,
 				751FF4A126268CB8007CB2A8 /* SceneDelegate.swift */,
@@ -101,6 +106,7 @@
 				751FF4B426268D0F007CB2A8 /* GoogleService-Info.plist */,
 				751FF4DD2626912B007CB2A8 /* DashboardViewController.swift */,
 				751FF4E026269247007CB2A8 /* AddProductCategoryViewController.swift */,
+				75F194C6262F8E7000698D7D /* AddProductViewController.swift */,
 			);
 			path = AdminAddProducts;
 			sourceTree = "<group>";
@@ -112,6 +118,14 @@
 				751FF4DA26268E1E007CB2A8 /* KeychainService.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		75F194C2262F86CC00698D7D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75F194C3262F86DC00698D7D /* ProductCategoriesModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +250,8 @@
 				751FF4D826268DFB007CB2A8 /* Utilities.swift in Sources */,
 				751FF4DB26268E1E007CB2A8 /* KeychainService.swift in Sources */,
 				751FF4A226268CB8007CB2A8 /* SceneDelegate.swift in Sources */,
+				75F194C4262F86DC00698D7D /* ProductCategoriesModel.swift in Sources */,
+				75F194C7262F8E7000698D7D /* AddProductViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

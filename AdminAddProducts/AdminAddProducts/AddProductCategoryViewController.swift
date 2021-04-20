@@ -13,11 +13,18 @@ class AddProductCategoryViewController: UIViewController,  UIImagePickerControll
     @IBOutlet weak var imgView: UIImageView!
     
     @IBOutlet weak var txtCategory: UITextField!
+    var db: Firestore!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // [START setup]
+        let settings = FirestoreSettings()
 
-        // Do any additional setup after loading the view.
+        Firestore.firestore().settings = settings
+        // [END setup]
+        db = Firestore.firestore()
+
     }
     @IBAction func selectImageAction(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
@@ -69,6 +76,19 @@ class AddProductCategoryViewController: UIViewController,  UIImagePickerControll
             }
                 
             print(downloadURL)
+                
+                let newCategory = self.db.collection("productCategories").document()
+                let category = ProductCategoriesModel(categoryID: newCategory.documentID, name: self.txtCategory.text!, imageURL: downloadURL.absoluteString)
+                // later...
+                newCategory.setData([
+                    "categoryID"  : category.categoryID,
+                    "name" : category.name,
+                    "imageURL" : category.imageURL
+                ])
+                self.navigationController?.popViewController(animated: true)
+                
+                
+                
           }
         }
         
