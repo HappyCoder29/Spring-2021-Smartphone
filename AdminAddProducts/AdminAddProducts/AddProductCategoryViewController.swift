@@ -78,17 +78,15 @@ class AddProductCategoryViewController: UIViewController,  UIImagePickerControll
             print(downloadURL)
                 
                 let newCategory = self.db.collection("productCategories").document()
-                let category = ProductCategoriesModel(categoryID: newCategory.documentID, name: self.txtCategory.text!, imageURL: downloadURL.absoluteString)
+                let category = ProductCategoriesModel(newCategory.documentID, self.txtCategory.text!, downloadURL.absoluteString)
                 // later...
                 newCategory.setData([
                     "categoryID"  : category.categoryID,
                     "name" : category.name,
-                    "imageURL" : category.imageURL
+                    "image" : category.image
                 ])
                 self.navigationController?.popViewController(animated: true)
-                
-                
-                
+            
           }
         }
         

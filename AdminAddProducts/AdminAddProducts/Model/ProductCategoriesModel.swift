@@ -11,12 +11,12 @@ class ProductCategoriesModel{
     
     var categoryID: String = ""
     var name: String = ""
-    var imageURL: String = ""
+    var image: String = ""
     
-    init(categoryID: String, name: String, imageURL: String) {
+    init(_ categoryID: String, _ name: String, _ image: String) {
         self.categoryID = categoryID
         self.name = name
-        self.imageURL = imageURL
+        self.image = image
     }
 
     
