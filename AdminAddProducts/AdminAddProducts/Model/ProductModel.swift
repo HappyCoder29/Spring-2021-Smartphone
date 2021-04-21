@@ -17,27 +17,5 @@ class ProductModel{
     var name : String = ""
     var productID : String = ""
     var unitType : String = ""
-    
-//    init(_ categoryID : String,
-//         _ name : String,
-//         _ productID : String,
-//         _ description : String,
-//         _ image : String,
-//         _ isVegetarian : Bool,
-//         _ keywords : [String],
-//         _ isActive : Bool,
-//         _ unitType : String) {
-//        
-//        self.categoryID = categoryID
-//        self.description = description
-//        self.image = image
-//        self.isActive = isActive
-//        self.isVegetarian = isVegetarian
-//        self.keywords = keywords
-//        self.name = name
-//        self.productID = productID
-//        self.unitType = unitType
-//    }
 
-    
 }
